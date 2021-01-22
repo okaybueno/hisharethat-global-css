@@ -4,24 +4,24 @@
 
 @function hi-grid-el-mob($cols, $mod: false) {
   @if $mod {
-    @return calc((100% / #{$grid-columns--mobile / $cols}) - #{hi-fixed(($grid-i-gutter--mob * ($grid-columns--mobile - 1)) / ($grid-columns--mobile / $cols)) - ($grid-i-gutter--mob * ($cols - 1))} + #{$mod});
+    @return calc((100% / #{$hi-grid-columns--mob / $cols}) - #{hi-fixed(($hi-grid-i-gutter--mob * ($hi-grid-columns--mob - 1)) / ($hi-grid-columns--mob / $cols)) - ($hi-grid-i-gutter--mob * ($cols - 1))} + #{$mod});
   } @else {
-    @return calc((100% / #{$grid-columns--mobile / $cols}) - #{hi-fixed(($grid-i-gutter--mob * ($grid-columns--mobile - 1)) / ($grid-columns--mobile / $cols)) - ($grid-i-gutter--mob * ($cols - 1))});
+    @return calc((100% / #{$hi-grid-columns--mob / $cols}) - #{hi-fixed(($hi-grid-i-gutter--mob * ($hi-grid-columns--mob - 1)) / ($hi-grid-columns--mob / $cols)) - ($hi-grid-i-gutter--mob * ($cols - 1))});
   }
 }
 
 @function hi-grid-el-tab($cols, $mod: false) {
   @if $mod {
-    @return calc((100% / #{$grid-columns--tablet / $cols}) - #{hi-fixed(($grid-i-gutter--tab * ($grid-columns--tablet - 1)) / ($grid-columns--tablet / $cols)) - ($grid-i-gutter--tab * ($cols - 1))} + #{$mod});
+    @return calc((100% / #{$hi-grid-columns--tab / $cols}) - #{hi-fixed(($hi-grid-i-gutter--tab * ($hi-grid-columns--tab - 1)) / ($hi-grid-columns--tab / $cols)) - ($hi-grid-i-gutter--tab * ($cols - 1))} + #{$mod});
   } @else {
-    @return calc((100% / #{$grid-columns--tablet / $cols}) - #{hi-fixed(($grid-i-gutter--tab * ($grid-columns--tablet - 1)) / ($grid-columns--tablet / $cols)) - ($grid-i-gutter--tab * ($cols - 1))});
+    @return calc((100% / #{$hi-grid-columns--tab / $cols}) - #{hi-fixed(($hi-grid-i-gutter--tab * ($hi-grid-columns--tab - 1)) / ($hi-grid-columns--tab / $cols)) - ($hi-grid-i-gutter--tab * ($cols - 1))});
   }
 }
 
 @function hi-grid-el-dtp($cols, $mod: false) {
   @if $mod {
-    @return calc((100% / #{$grid-columns--desktop / $cols}) - #{hi-fixed(($grid-i-gutter--dtp * ($grid-columns--desktop - 1)) / ($grid-columns--desktop / $cols)) - ($grid-i-gutter--dtp * ($cols - 1))} + #{$mod});
+    @return calc((100% / #{$hi-grid-columns--dtp / $cols}) - #{hi-fixed(($hi-grid-i-gutter--dtp * ($hi-grid-columns--dtp - 1)) / ($hi-grid-columns--dtp / $cols)) - ($hi-grid-i-gutter--dtp * ($cols - 1))} + #{$mod});
   } @else {
-    @return calc((100% / #{$grid-columns--desktop / $cols}) - #{hi-fixed(($grid-i-gutter--dtp * ($grid-columns--desktop - 1)) / ($grid-columns--desktop / $cols)) - ($grid-i-gutter--dtp * ($cols - 1))});
+    @return calc((100% / #{$hi-grid-columns--dtp / $cols}) - #{hi-fixed(($hi-grid-i-gutter--dtp * ($hi-grid-columns--dtp - 1)) / ($hi-grid-columns--dtp / $cols)) - ($hi-grid-i-gutter--dtp * ($cols - 1))});
   }
 }

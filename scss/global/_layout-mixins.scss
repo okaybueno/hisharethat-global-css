@@ -6,21 +6,21 @@
   box-sizing: border-box;
 
   @if (index($breakpoints, 'desktop') or $breakpoints == null) {
-    padding-left: $grid-o-gutter--dtp;
-    padding-right: $grid-o-gutter--dtp;
+    padding-left: $hi-grid-o-gutter--dtp;
+    padding-right: $hi-grid-o-gutter--dtp;
   }
 
   @if (index($breakpoints, 'tablet') or $breakpoints == null) {
     @include hi-mq('tablet') {
-      padding-left: $grid-o-gutter--tab;
-      padding-right: $grid-o-gutter--tab;
+      padding-left: $hi-grid-o-gutter--tab;
+      padding-right: $hi-grid-o-gutter--tab;
     }
   }
 
   @if (index($breakpoints, 'mobile') or $breakpoints == null) {
     @include hi-mq('mobile') {
-      padding-left: $grid-o-gutter--mob;
-      padding-right: $grid-o-gutter--mob;
+      padding-left: $hi-grid-o-gutter--mob;
+      padding-right: $hi-grid-o-gutter--mob;
     }
   }
 }
