@@ -1,0 +1,46 @@
+// Generic Grid Wrapper Class
+
+@mixin grid-wrapper($breakpoints: null) {
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+
+  @if (index($breakpoints, 'desktop') or $breakpoints == null) {
+    padding-left: $grid-o-gutter--dtp;
+    padding-right: $grid-o-gutter--dtp;
+  }
+
+  @if (index($breakpoints, 'tablet') or $breakpoints == null) {
+    @include mq('tablet') {
+      padding-left: $grid-o-gutter--tab;
+      padding-right: $grid-o-gutter--tab;
+    }
+  }
+
+  @if (index($breakpoints, 'mobile') or $breakpoints == null) {
+    @include mq('mobile') {
+      padding-left: $grid-o-gutter--mob;
+      padding-right: $grid-o-gutter--mob;
+    }
+  }
+}
+
+@mixin grid-el-res($desktop-cols: false, $tablet-cols: false, $mobile-cols: false) {
+  // variables specify the number of columns which each individual element spans
+
+  @if ($desktop-cols) {
+    width: grid-el-dtp($desktop-cols);
+  }
+
+  @if ($tablet-cols) {
+    @include mq('tablet') {
+      width: grid-el-tab($tablet-cols);
+    }
+  }
+
+  @if ($mobile-cols) {
+    @include mq('mobile') {
+      width: grid-el-mob($mobile-cols);
+    }
+  }
+}

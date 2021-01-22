@@ -1,0 +1,74 @@
+html {
+  font-family: 'Regular', sans-serif;
+}
+
+button,
+a,
+input {
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  cursor: default;
+  user-select: none;
+}
+
+h1 {
+  font-family: 'Bold', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.75rem;
+  line-height: 2.4rem;
+}
+
+h2 {
+  font-family: 'Bold', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-family: 'Bold', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.32rem;
+}
+
+h4 {
+  font-family: 'Bold', 'Helvetica', 'Arial', sans-serif;
+  font-size: $size-BASE;
+  line-height: 1.2rem;
+}
+
+p,
+textarea {
+  font-size: $size-BASE;
+  font-family: 'Regular', 'Helvetica', 'Arial', sans-serif;
+  line-height: 180%;
+}
+
+a,
+button {
+  font-size: $size-BASE;
+  font-family: 'Bold', 'Helvetica', 'Arial', sans-serif;
+  outline: none;
+}
+
+a {
+  color: $color-action;
+  display: block;
+}
+
+label {
+  text-transform: uppercase;
+  color: $color-bg-dark;
+  line-height: 200%;
+}
+
+input {
+  font-size: $size-BASE;
+}
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
