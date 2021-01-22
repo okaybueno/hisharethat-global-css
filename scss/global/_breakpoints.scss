@@ -10,7 +10,7 @@ $breakpoints: (
 
 
 // https://codepen.io/okay_alex/pen/eXzNYK
-@mixin mq($width) {
+@mixin hi-mq($width) {
   @if map-has-key($breakpoints, $width) {
     $width: map-get($breakpoints, $width);
     @media only screen and (max-width: $width) {

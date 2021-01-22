@@ -13,29 +13,27 @@ $size-j: 1.74rem;
 $size-k: 2rem;
 $size-l: 2.5rem;
 $size-m: 3rem;
-$size-n: 4rem;
+$size-n: 3.5rem;
+$size-o: 4rem;
 
 
 // Grid Variables
-$grid-o-gutter--mob: $size-l;
-$grid-o-gutter--tab: 7.5%;
-$grid-o-gutter--dtp: 10%;
+$grid-o-gutter--mob: $size-BASE;
+$grid-o-gutter--tab: $size-l;
+$grid-o-gutter--dtp: $size-n;
 
-$grid-columns--mobile: 6;
-$grid-columns--tablet: 8;
-$grid-columns--desktop: 12;
+$grid-columns--mob: 6;
+$grid-columns--tab: 8;
+$grid-columns--dtp: 12;
 
 $grid-i-gutter--mob: $size-BASE;
-$grid-i-gutter--tab: $size-i;
-$grid-i-gutter--dtp: $size-k;
+$grid-i-gutter--tab: $size-BASE;
+$grid-i-gutter--dtp: $size-l;
 
 
 // UI Variables
-$header-height: 80px;
-$header-height-mobile: 64px;
-$border-radius: $size-a;
-$nav-height: 4.5rem;
-
+$nav-height-mobile: $size-o;
+$nav-height: $size-o;
 
 // z-index hierarchy function
 
