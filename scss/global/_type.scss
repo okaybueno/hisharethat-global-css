@@ -54,18 +54,20 @@ h4 {
 
 h1 {
   font-family: 'Bold', 'Helvetica', 'Arial', sans-serif;
-  font-size: 1.75rem;
-  line-height: 2.4rem;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
 }
 
 h2 {
   font-family: 'Bold', 'Helvetica', 'Arial', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.625rem;
+  line-height: $size-l;
 }
 
 h3 {
   font-family: 'Bold', 'Helvetica', 'Arial', sans-serif;
-  font-size: 1.32rem;
+  font-size: $size-sm;
+  line-height: 1.375rem;
 }
 
 h4 {
@@ -83,24 +85,25 @@ textarea {
 
 a,
 button {
-  font-size: $size-BASE;
+  font-size: $size-s;
   font-family: 'Bold', 'Helvetica', 'Arial', sans-serif;
   outline: none;
 }
 
 a {
-  color: $color-action;
+  color: $color-purple-light;
   display: block;
 }
 
 label {
+  font-family: 'Regular', 'Helvetica', 'Arial', sans-serif;
   text-transform: uppercase;
-  color: $color-bg-dark;
-  line-height: 200%;
+  color: $color-grey-sand;
+  line-height: $size-xs;
 }
 
 input {
-  font-size: $size-BASE;
+  font-size: $size-xs;
 }
 
 .text-truncate {

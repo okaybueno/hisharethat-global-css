@@ -1,26 +1,23 @@
 // Sizing Variables
-$size-a: .5rem;
-$size-b: .64rem;
-$size-c: .72rem;
-$size-d: .85rem;
-$size-e: .92rem;
-$size-BASE: 1rem;
-$size-f: 1.12rem;
-$size-g: 1.24rem;
-$size-h: 1.32rem;
-$size-i: 1.5rem;
-$size-j: 1.74rem;
-$size-k: 2rem;
-$size-l: 2.5rem;
-$size-m: 3rem;
-$size-n: 3.5rem;
-$size-o: 4rem;
+$size-xxxs: .5rem;
+$size-xxs: .625rem;
+$size-xs: .75rem;
+$size-s: .875rem;
+$size-base: 1rem;
+$size-sm: 1.125rem;
+$size-m: 1.25rem;
+$size-ml: 1.5rem;
+$size-xml: 1.75rem;
+$size-l: 2rem;
+$size-xl: 2.5rem;
+$size-xxl: 3rem;
+$size-xxxl: 4rem;
 
 
 // Grid Variables
 $hi-grid-o-gutter--mob: $size-BASE;
-$hi-grid-o-gutter--tab: $size-l;
-$hi-grid-o-gutter--dtp: $size-n;
+$hi-grid-o-gutter--tab: $size-xl;
+$hi-grid-o-gutter--dtp: 3.5rem;
 
 $hi-grid-columns--mob: 6;
 $hi-grid-columns--tab: 8;
@@ -28,12 +25,12 @@ $hi-grid-columns--dtp: 12;
 
 $hi-grid-i-gutter--mob: $size-BASE;
 $hi-grid-i-gutter--tab: $size-BASE;
-$hi-grid-i-gutter--dtp: $size-l;
+$hi-grid-i-gutter--dtp: $size-xl;
 
 
 // UI Variables
-$hi-nav-height-mobile: $size-o;
-$hi-nav-height: $size-o;
+$hi-nav-height-mobile: $size-xxxl;
+$hi-nav-height: $size-xxxl;
 
 // z-index hierarchy function
 
