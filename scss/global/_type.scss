@@ -111,3 +111,11 @@ input {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+.button-inline {
+  font-family: 'Bold', 'Helvetica', 'Arial', sans-serif;
+  font-size: $size-xs;
+  line-height: $size-sm;
+  letter-spacing: 0.005em;
+}
+
