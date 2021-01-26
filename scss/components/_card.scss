@@ -1,0 +1,6 @@
+@mixin card {
+  border-radius: $hi-card-border-radius;
+  background: $white;
+  box-shadow: $shadow-card-new;
+  overflow: hidden;
+}
