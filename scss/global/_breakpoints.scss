@@ -1,4 +1,4 @@
-$breakpoints: (
+$hi-breakpoints: (
         'mobile-small': 360px,
         'mobile': 500px,
         'tablet-small': 768px,
@@ -11,8 +11,8 @@ $breakpoints: (
 
 // https://codepen.io/okay_alex/pen/eXzNYK
 @mixin hi-mq($width) {
-  @if map-has-key($breakpoints, $width) {
-    $width: map-get($breakpoints, $width);
+  @if map-has-key($hi-breakpoints, $width) {
+    $width: map-get($hi-breakpoints, $width);
     @media only screen and (max-width: $width) {
       @content;
     }
