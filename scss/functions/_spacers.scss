@@ -1,6 +1,6 @@
 @function get-spacer($size) {
   @if not map-has-key($spacers, $size) {
-    @error "The size #{$size} does not exist. Please use of of #{$spacers}";
+    @error "The size #{$size} does not exist. Please use one of #{map-keys($spacers)}";
   }
 
   @return map-get($spacers, $size);
