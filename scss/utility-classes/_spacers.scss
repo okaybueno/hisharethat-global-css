@@ -1,0 +1,20 @@
+@each $option, $optionMap in $options {
+  @each $spacer, $val in $spacers {
+    .#{map-get($optionMap, 'prefix')}-#{$spacer} {
+      #{map-get($optionMap, 'prop')}: #{$val}px;
+    };
+
+    .#{map-get($optionMap, 'prefix')}-x-#{$spacer} {
+      #{map-get($optionMap, 'prop')}-left: #{$val}px;
+      #{map-get($optionMap, 'prop')}-right: #{$val}px;
+    };
+
+    .#{map-get($optionMap, 'prefix')}-y-#{$spacer} {
+      #{map-get($optionMap, 'prop')}-top: #{$val}px;
+      #{map-get($optionMap, 'prop')}-bottom: #{$val}px;
+    };
+    .#{map-get($optionMap, 'prefix')}-bottom-#{$spacer} {
+      #{map-get($optionMap, 'prop')}-bottom: #{$val}px;
+    };
+  }
+}
