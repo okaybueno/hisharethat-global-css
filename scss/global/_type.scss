@@ -38,6 +38,13 @@ html {
   font-family: 'Regular', sans-serif;
 }
 
+html,
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
 button,
 a,
 input {
@@ -96,10 +103,12 @@ a {
 }
 
 label {
-  font-family: 'Regular', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Medium', 'Helvetica', 'Arial', sans-serif;
   text-transform: uppercase;
   color: $color-grey-sand;
   line-height: $size-xs;
+  font-size: $size-xs;
+  letter-spacing: 0.025rem;
 }
 
 input {
