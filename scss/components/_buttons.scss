@@ -11,22 +11,12 @@
   bottom: $size-BASE;
   right: $size-BASE;
 
-  @include hi-mq('tablet-small') {
-    border-radius: 50%;
-    padding: $size-xxs;
-
-    span {
-      display: none;
-    }
-
-    svg {
-      transform: translateX(0);
-    }
-  }
+  @include btnWithNoText('tablet-small');
 }
 
 .hi-btn-secondary {
   @include buttonFill($white, $color-purple-dark, $white-hover);
+  @include btnWithNoText('mobile-small');
 }
 
 .hi-btn-outline {
