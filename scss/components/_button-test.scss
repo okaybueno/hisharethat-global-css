@@ -5,9 +5,23 @@
 
 .hi-btn-fab {
   @include buttonFill($color-primary, $color-primary-hover, $white);
+  padding: 0.3125rem $size-s 0.4375rem;
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: $size-BASE;
+  right: $size-BASE;
+
+  @include hi-mq('tablet-small') {
+    border-radius: 50%;
+    padding: $size-xxs;
+
+    span {
+      display: none;
+    }
+
+    svg {
+      transform: translateX(0);
+    }
+  }
 }
 
 .hi-btn-secondary {
