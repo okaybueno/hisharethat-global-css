@@ -1,0 +1,131 @@
+$dropdown-selected-height: 40px;
+
+.hi-dropdown {
+  user-select: none;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+
+  &__selected {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    //line-height: 1.1rem;
+
+    &--active {
+      color: $color-alert;
+    }
+  }
+
+  &__label-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.25rem;
+
+    &__label {
+      font-size: $size-xxxs;
+      line-height: $size-xs;
+      margin-right: 0.25rem;
+      color: $black;
+    }
+  }
+
+  &__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Regular", "Helvetica", "Arial", sans-serif;
+    background: #fff;
+    color: $black;
+    padding: 12px 16px;
+    border-radius: 8px;
+    height: $dropdown-selected-height;
+    font-size: $size-BASE;
+    line-height: 1.375rem;
+    margin-bottom: 0;
+    cursor: pointer;
+
+    &--open {
+      border-radius: 8px 8px 0px 0px;
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background: $white;
+    z-index: 1000;
+    float: left;
+    margin: 0 0 0;
+    list-style: none;
+    text-align: left;
+    border-radius: 0px 0px 8px 8px;
+    padding: $size-xxxs 0;
+    max-height: 350px;
+    overflow: scroll;
+    cursor: pointer;
+
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 7px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      background-color: rgba(0, 0, 0, .5);
+      box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+    }
+
+    li {
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+      margin: 0;
+    }
+
+    li > a {
+      padding: $size-xxxs $size-BASE $size-xxxs;
+      font-family: 'Regular', 'Helvetica', 'Arial', sans-serif;
+      font-size: $size-BASE;
+      line-height: $size-sm;
+      color: $black;
+      white-space: nowrap;
+      text-decoration: none;
+      user-select: none;
+
+      &:hover {
+        background-color: $color-bg-light-hover;
+      }
+    }
+  }
+
+  .caret {
+    display: flex;
+    height: auto;
+    width: auto;
+    border: 0;
+    margin: 0;
+
+    &--active {
+      transform: rotate(180deg);
+      transition: transform .3s ease;
+    }
+
+    &--inactive {
+      transform: rotate(0deg);
+      transition: transform .3s ease;
+    }
+
+    svg {
+      fill: $black;
+    }
+
+    &--filter {
+      svg {
+        fill: $white;
+      }
+    }
+  }
+}
