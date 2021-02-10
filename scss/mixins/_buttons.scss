@@ -6,6 +6,7 @@
   border: 0;
   white-space: nowrap;
   cursor: pointer;
+  text-transform: initial;
 
   &:focus {
     outline: 0;
@@ -16,6 +17,8 @@
   @include reset-button;
   display: inline-flex;
   align-items: center;
+  font-family: "Bold", "Helvetica", "Arial", sans-serif;
+  font-size: $size-xs;
   border-radius: 2.75rem;
   line-height: 1.5rem;
   padding: 0.625rem;
@@ -25,7 +28,7 @@
   svg {
     width: 1.5rem;
     height: 1.5rem;
-    margin-right: 0.25rem;
+    transform: translateX(-0.25rem);
   }
 }
 
@@ -40,6 +43,7 @@
 
 @mixin buttonFill($colorBg, $colorHover, $colorText) {
   @include buttonBase;
+  color: $colorBg;
 
   &--active {
     @include buttonAnimation();
