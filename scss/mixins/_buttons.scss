@@ -1,0 +1,86 @@
+// Mixin Buttons
+
+
+@mixin reset-button {
+  background: none;
+  border: 0;
+  white-space: nowrap;
+  cursor: pointer;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+@mixin buttonBase {
+  @include reset-button;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 2.75rem;
+  line-height: 1.5rem;
+  padding: 0.625rem;
+  border: 0.125rem solid transparent;
+  cursor: pointer;
+
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.25rem;
+  }
+}
+
+@mixin buttonAnimation() {
+  &:hover {
+    transform: scale(1.02);
+  }
+  &:active {
+    transform: scale(0.96);
+  }
+}
+
+@mixin buttonFill($colorBg, $colorHover, $colorText) {
+  @include buttonBase;
+
+  &--active {
+    @include buttonAnimation();
+    background: $colorBg;
+    color: $colorText;
+
+    &:hover {
+      background: $colorHover;
+    }
+
+    &:focus {
+      border-color: $colorHover;
+    }
+  }
+  &--disabled {
+    background: $color-inactive;
+    color: $white;
+  }
+}
+
+@mixin buttonOutline($colorBorder, $colorText, $colorHover) {
+  @include buttonBase;
+
+  &--active {
+    @include buttonAnimation();
+    border-color: $colorBorder;
+    color: $colorText;
+
+    &:hover {
+      border-color: $colorHover;
+      color: $colorHover;
+    }
+
+    &:focus {
+      color: $colorHover;
+      border-color: $colorHover;
+    }
+  }
+
+  &--disabled {
+    border-color: $color-inactive;
+    color: $color-inactive;
+  }
+}
