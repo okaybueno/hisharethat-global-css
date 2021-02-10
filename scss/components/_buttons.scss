@@ -11,12 +11,12 @@
   bottom: $size-BASE;
   right: $size-BASE;
 
-  @include btnWithNoText('tablet-small');
+  @include btnWithNoText('tablet-small',$size-xxs);
 }
 
 .hi-btn-secondary {
   @include buttonFill($white, $color-purple-dark, $white-hover);
-  @include btnWithNoText('mobile-small');
+  @include btnWithNoText('mobile-small', 0.125rem);
 }
 
 .hi-btn-outline {

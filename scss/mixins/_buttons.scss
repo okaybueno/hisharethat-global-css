@@ -90,9 +90,9 @@
 }
 
 @mixin btnWithNoText($breakpoint) {
-  @include hi-mq($breakpoint) {
+  @include hi-mq($breakpoint, $padding) {
     border-radius: 50%;
-    padding: $size-xxs;
+    padding: $padding;
 
     span {
       display: none;
