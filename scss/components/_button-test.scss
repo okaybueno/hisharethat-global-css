@@ -1,19 +1,19 @@
 // Button Classes
-.btn-primary {
+.hi-btn-primary {
   @include buttonFill($color-primary, $color-primary-hover, $white);
 }
 
-.btn-fab {
+.hi-btn-fab {
   @include buttonFill($color-primary, $color-primary-hover, $white);
   position: fixed;
   bottom: 2rem;
   right: 2rem;
 }
 
-.btn-secondary {
+.hi-btn-secondary {
   @include buttonFill($white, $white-hover, $color-primary);
 }
 
-.btn-outline {
+.hi-btn-outline {
   @include buttonOutline($color-primary, $color-primary, $color-primary-hover);
 }
