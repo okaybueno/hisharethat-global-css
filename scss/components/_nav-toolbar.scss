@@ -1,0 +1,7 @@
+.nav-toolbar {
+  button {
+    &:nth-child(2) {
+      margin-left: $size-BASE;
+    }
+  }
+}

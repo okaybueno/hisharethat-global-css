@@ -41,7 +41,7 @@
   }
 }
 
-@mixin buttonFill($colorBg, $colorHover, $colorText) {
+@mixin buttonFill($colorBg, $colorText, $colorHover) {
   @include buttonBase;
   color: $colorBg;
 
