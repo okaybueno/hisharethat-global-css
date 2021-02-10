@@ -1,0 +1,15 @@
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  margin-right: $size-BASE;
+
+  @include hi-mq('tablet') {
+    margin-right: $size-xxxs;
+  }
+
+  button {
+    &:not(:last-child) {
+      margin-right: $size-xxxs;
+    }
+  }
+}

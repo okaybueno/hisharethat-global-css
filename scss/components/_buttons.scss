@@ -33,17 +33,14 @@
   @include buttonOutline($color-primary, $color-primary, $color-primary-hover);
 }
 
-
-
-
 .hi-btn-lang {
-  &-active {
-    @include buttonOutline($white, $white, $white-hover);
+  &-selected {
+    @include buttonOutline($color-primary, $color-primary, $color-primary-hover);
     @include transition-standard(background-color, .36s);
   }
 
-  &-selected {
-    @include buttonOutline($color-primary, $color-primary, $color-primary-hover);
+  &-active {
+    @include buttonOutline($white, $white, $white-hover);
     @include transition-standard(background-color, .36s);
   }
 
