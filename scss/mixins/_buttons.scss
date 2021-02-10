@@ -89,8 +89,8 @@
   }
 }
 
-@mixin btnWithNoText($breakpoint) {
-  @include hi-mq($breakpoint, $padding) {
+@mixin btnWithNoText($breakpoint, $padding) {
+  @include hi-mq($breakpoint) {
     border-radius: 50%;
     padding: $padding;
 
