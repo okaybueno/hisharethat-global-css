@@ -1,0 +1,70 @@
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-family: "Bold", "Helvetica", "Arial", sans-serif;
+  font-size: $size-xs;
+  line-height: 1;
+  color: $white;
+  text-transform: initial;
+  width: auto;
+  height: auto;
+  border-radius: $size-m;
+  white-space: nowrap;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__primary {
+    padding: 0.5625rem $size-s 0.6875rem;
+    background: $color-primary;
+  }
+
+  &__upload-input {
+    position: absolute;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+  }
+
+  &--with-svg {
+    padding: 0.1875rem $size-s 0.3125rem $size-xxs;
+
+    svg {
+      transform: translateX(-1px);
+      margin-right: .25rem;
+    }
+  }
+
+  &__fixed-bottom {
+    position: fixed;
+    bottom: $hi-grid-o-gutter--mob;
+    right: $hi-grid-o-gutter--mob;
+    padding: 0.4375rem $size-s 0.5625rem $size-xxs;
+
+    svg {
+      transform: translateX(-2px);
+      margin-right: .25rem;
+    }
+
+    @include hi-mq('tablet-small') {
+      border-radius: 50%;
+      padding: $size-xs $size-xs;
+
+      svg {
+        transform: translateX(0px);
+        margin-right: 0;
+      }
+
+      span {
+        display: none;
+      }
+    }
+
+  }
+}
