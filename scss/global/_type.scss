@@ -33,18 +33,6 @@
   src: url($font-load-path + "/DIN-Round-W01-Bold.woff2") format("woff2"), url($font-load-path + "/DIN-Round-W01-Bold.woff") format("woff");
 }
 
-
-html {
-  font-family: 'Regular', sans-serif;
-}
-
-html,
-body {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-
 button,
 a,
 input {
