@@ -23,7 +23,7 @@
   font-family: "Medium";
   font-style: normal;
   font-display: swap;
-  src: url($font-load-path + "/DIN-Round-W01-Medium") format("woff2"), url($font-load-path + "/DIN-Round-W01-Medium.woff") format("woff");
+  src: url($font-load-path + "/DIN-Round-W01-Medium.woff2") format("woff2"), url($font-load-path + "/DIN-Round-W01-Medium.woff") format("woff");
 }
 
 @font-face {
