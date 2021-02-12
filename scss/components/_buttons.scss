@@ -1,52 +1,52 @@
-// Button Classes
-
-.hi-btn-primary {
-  @include buttonFill($color-primary, $white, $color-primary-hover);
-}
-
-.hi-btn-fab {
-  @include buttonFill($color-primary, $white, $color-primary-hover);
-  padding: 0.3125rem $size-s 0.4375rem;
-  position: fixed;
-  bottom: $size-BASE;
-  right: $size-BASE;
-
-  @include btnWithNoText('tablet-small',$size-xxs);
-}
-
-.hi-btn-secondary {
-  @include buttonFill($white, $color-purple-dark, $white-hover);
-  @include btnWithNoText('mobile-small', 0.125rem);
-}
-
-.hi-btn-outline {
-  @include buttonOutline($color-primary, $color-primary, $color-primary-hover);
-}
-
-.hi-btn-lang {
-  &-selected {
-    @include buttonOutline($color-primary, $color-primary, $color-primary-hover);
-    @include transition-standard(background-color, .36s);
-  }
-
-  &-active {
-    @include buttonOutline($white, $white, $white-hover);
-    @include transition-standard(background-color, .36s);
-  }
-
-  &-inactive {
-    @include buttonOutline($color-purple-light, $color-purple-light, $color-purple-lighter);
-    @include transition-standard(background-color, .36s);
-  }
-}
-
-.hi-input-hidden {
-  position: absolute;
-  padding: 0;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  z-index: -1;
-  visibility: hidden;
-}
+//// Button Classes
+//
+//.hi-btn-primary {
+//  @include buttonFill($color-primary, $white, $color-primary-hover);
+//}
+//
+//.hi-btn-fab {
+//  @include buttonFill($color-primary, $white, $color-primary-hover);
+//  padding: 0.3125rem $size-s 0.4375rem;
+//  position: fixed;
+//  bottom: $size-BASE;
+//  right: $size-BASE;
+//
+//  @include btnWithNoText('tablet-small',$size-xxs);
+//}
+//
+//.hi-btn-secondary {
+//  @include buttonFill($white, $color-purple-dark, $white-hover);
+//  @include btnWithNoText('mobile-small', 0.125rem);
+//}
+//
+//.hi-btn-outline {
+//  @include buttonOutline($color-primary, $color-primary, $color-primary-hover);
+//}
+//
+//.hi-btn-lang {
+//  &-selected {
+//    @include buttonOutline($color-primary, $color-primary, $color-primary-hover);
+//    @include transition-standard(background-color, .36s);
+//  }
+//
+//  &-active {
+//    @include buttonOutline($white, $white, $white-hover);
+//    @include transition-standard(background-color, .36s);
+//  }
+//
+//  &-inactive {
+//    @include buttonOutline($color-purple-light, $color-purple-light, $color-purple-lighter);
+//    @include transition-standard(background-color, .36s);
+//  }
+//}
+//
+//.hi-input-hidden {
+//  position: absolute;
+//  padding: 0;
+//  top: 0;
+//  bottom: 0;
+//  left: 0;
+//  opacity: 0;
+//  z-index: -1;
+//  visibility: hidden;
+//}
