@@ -50,3 +50,7 @@
   z-index: -1;
   visibility: hidden;
 }
+
+.hi-btn-primary--purple {
+  @include buttonFill($color-purple-dark, $white, $color-purple-medium);
+}
