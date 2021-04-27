@@ -1,0 +1,17 @@
+.caret {
+  display: flex;
+  height: auto;
+  width: auto;
+  border: 0;
+  margin: 0;
+
+  &--active {
+    transform: rotate(180deg);
+    transition: transform .3s ease;
+  }
+
+  &--inactive {
+    transform: rotate(0deg);
+    transition: transform .3s ease;
+  }
+}
