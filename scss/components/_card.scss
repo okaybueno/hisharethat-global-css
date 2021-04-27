@@ -3,4 +3,8 @@
   background: $white;
   box-shadow: $shadow-card-new;
   overflow: hidden;
+
+  &:hover {
+    box-shadow: $shadow-card-hover-new;
+  }
 }
