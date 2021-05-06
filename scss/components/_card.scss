@@ -1,10 +1,12 @@
-@mixin hi-card {
+@mixin hi-card($hover) {
   border-radius: $hi-card-border-radius;
   background: $white;
   box-shadow: $shadow-card-new;
   overflow: hidden;
 
-  &:hover {
-    box-shadow: $shadow-card-hover-new;
+  @if $hover != false {
+    &:hover {
+      box-shadow: $shadow-card-hover-new;
+    }
   }
 }
