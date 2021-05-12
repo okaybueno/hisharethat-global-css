@@ -6,4 +6,43 @@
       margin-left: $size-BASE;
     }
   }
+
+  &--influencer {
+
+    button {
+      &:nth-child(2) {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-left: $size-xxxs;
+      }
+    }
+
+    .hi-btn-secondary {
+      padding-right: $size-xxxs;
+      padding-left: $size-xxxs;
+
+      @include hi-mq('mobile-small') {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+  }
+
+  &__desktop {
+    display: block;
+
+    @include hi-mq('mobile') {
+      display: none;
+    }
+  }
+
+  &__mobile {
+    display: none;
+
+    @include hi-mq('mobile') {
+      display: block;
+    }
+  }
 }
