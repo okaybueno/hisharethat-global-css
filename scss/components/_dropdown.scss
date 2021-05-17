@@ -106,6 +106,13 @@ $dropdown-selected-height: $size-xl;
 
     &--grey {
       background: #F6F7FA;
+
+      li > a {
+
+        &:hover {
+          background-color: $white;
+        }
+      }
     }
   }
 
