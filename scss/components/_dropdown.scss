@@ -48,6 +48,10 @@ $dropdown-selected-height: $size-xl;
     &--open {
       border-radius: $size-xxxs $size-xxxs 0 0;
     }
+
+    &--grey {
+      background: #F6F7FA;
+    }
   }
 
   &__menu {
@@ -98,6 +102,10 @@ $dropdown-selected-height: $size-xl;
       &:hover {
         background-color: $white-hover;
       }
+    }
+
+    &--grey {
+      background: #F6F7FA;
     }
   }
 
