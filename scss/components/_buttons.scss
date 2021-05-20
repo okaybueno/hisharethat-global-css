@@ -11,7 +11,7 @@
   bottom: $size-BASE;
   right: $size-BASE;
 
-  @include btnWithNoText('tablet-small',$size-xxs);
+  @include btnWithNoText('tablet-small', $size-xxs);
 }
 
 .hi-btn-secondary {
@@ -39,8 +39,12 @@
     @include transition-standard(background-color, .36s);
   }
 
-  &--white {
+  &-white {
     background: $white;
+
+    &--active {
+      color: $black;
+    }
   }
 }
 
