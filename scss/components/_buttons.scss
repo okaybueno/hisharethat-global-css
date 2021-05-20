@@ -38,6 +38,10 @@
     @include buttonOutline($color-purple-light, $color-purple-light, $color-purple-lighter);
     @include transition-standard(background-color, .36s);
   }
+
+  &--white {
+    background: $white;
+  }
 }
 
 .hi-input-hidden {
